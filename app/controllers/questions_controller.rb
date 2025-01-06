@@ -4,13 +4,13 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
-
-    if params[:question] == 'I am going to work'
-      @answer = 'Great!'
-    elsif params[:question].match(/[?]+\z/)
-      @answer = 'Silly question, get dressed and go to work!'
-    else
-      @answer = 'I don\'t care, get dressed and go to work!'
-    end
+    @answer =
+      if params[:question] == 'I am going to work'
+        'Great!'
+      elsif params[:question].match(/[?]+\z/)
+        'Silly question, get dressed and go to work!'
+      else
+        'I don\'t care, get dressed and go to work!'
+      end
   end
 end
