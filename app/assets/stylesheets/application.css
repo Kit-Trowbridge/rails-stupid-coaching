@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+#yellow-block {
+  background-color: lightyellow;
+}
+
+.link {
+  text-decoration: none;
+  color: teal;
+}

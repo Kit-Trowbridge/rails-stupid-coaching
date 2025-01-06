@@ -1,16 +1,20 @@
-<p>
-  <div>
+<div class='fs-5 text-secondary'>
+    <div class='border-start border-5 mb-3 p-3'>
     <%= @question %>
     <br>
     <em>- You</em>
   </div>
 
-  <div>
-    <%= @answer %>
+  <div id='yellow-block' class='border-start border-5 mb-3 p-3'>
+    <strong><%= @answer %></strong>
     <br>
     <em>- Your coach</em>
   </div>
-</p>
+</div>
+
+
 
 <%# use root_path for your homepage (not ask_path) %>
-<%= link_to 'Ask a new question', root_path %>
+<p>
+  <%= link_to 'Ask a new question', root_path, class: 'link'%>
+</p>
